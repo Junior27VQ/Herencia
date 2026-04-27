@@ -12,8 +12,7 @@ public class Hija extends Padre {
 
 	@Override
 	public String toString() {
-		return "Hija [defectos=" + getDefectos() + ", virtudes=" + getVirtudes()
-				+  "]";
+		return "Hija [defectos=" + getDefectos() + ", virtudes=" + getVirtudes()+ ", Total Ahorrado=" +getTotalAhorrado()+  "]";
 	}
 
 }

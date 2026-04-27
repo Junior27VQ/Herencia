@@ -3,6 +3,7 @@ package com.krakedev.herencia;
 public class Padre {
 	private int defectos;
 	private int virtudes;
+	private double totalAhorrado;
 	
 	public Padre() {
 		super();
@@ -27,7 +28,13 @@ public class Padre {
 	public void setVirtudes(int virtudes) {
 		this.virtudes = virtudes;
 	}
-	
+	public double getTotalAhorrado() {
+		return totalAhorrado;
+	}
+	public void setTotalAhorrado(double totalAhorrado) {
+		this.totalAhorrado = totalAhorrado;
+	}
+
 	public void imprimir() {
 		System.out.println("Virtuden: "+virtudes);
 		System.out.println("Defectos: "+defectos);
@@ -35,11 +42,13 @@ public class Padre {
 	private void guardarSecreto() {
 		System.out.println("Esto no se Hereda: ");
 	}
-
+	public void ahorrar(double monto) {
+		totalAhorrado += monto;
+	}
 	
 	@Override
 	public String toString() {
-		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", Total Ahorrado=" + "]";
+		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", Total Ahorrado=" +", Total Ahorrado=" +totalAhorrado+ "]";
 	}
 	
 }
