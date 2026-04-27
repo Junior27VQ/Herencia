@@ -5,7 +5,7 @@ import com.krakedev.herencia.Hijo;
 public class TestHijo {
 
 	public static void main(String[] args) {
-		Hijo hijo=new Hijo(1,2,3);
+		Hijo hijo=new Hijo("Felipe",1,2,3);
 		System.out.println(hijo);
 	
 	}

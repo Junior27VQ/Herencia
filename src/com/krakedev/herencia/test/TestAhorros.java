@@ -19,7 +19,7 @@ public class TestAhorros {
 		hijo.ahorrar(125);
 		System.out.println(hijo);
 
-
+		System.out.println(">>>No todos los hijos ahorran igual... y en Java eso se controla con sobreescritura.<<<");
 	}
 
 }
